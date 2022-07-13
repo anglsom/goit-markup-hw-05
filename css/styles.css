@@ -460,9 +460,22 @@ margin-bottom: 50px;}
     background: rgba(47, 48, 58, 0.8);
     transition: transform 250ms ease;
 }
+.overlay>p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 27px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 .item-do {
     width: calc((100% - 2 * 30px)/3);
+position: relative;
 }
+
+
 .item-do:not(:last-child){
     margin-right: 30px;
 }

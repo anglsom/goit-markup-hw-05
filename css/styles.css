@@ -709,8 +709,64 @@ line-height: 1.71;
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
 }
+/*-- here start --*/
+.footer-submit{
+    margin-left: 95px;
+}
+.submit-title{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-align: start;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: #fff;
 
-
+}
+.submit-form{
+    display: flex;
+}
+.form-input{
+    padding-left: 10px;
+    width: 358px;
+    height: 50px;
+    background: #2f303a;
+    color: rgba(255,255,255,.6);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.input{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background: var(--accent-color);
+    border-radius: 4px;
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    cursor: pointer;
+    border: none;
+}
+.submit-icon{
+    fill:#F5F4FA;
+    margin-left: 10px;
+}
 /* Page Portfolio */
 
 /* Hero */

@@ -16,6 +16,7 @@
     --secondary-background-color:#F5F4FA;
     --button-color:#F5F4FA;
     --icon-color:#AFB1B8;
+    --cubic:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 html{
@@ -761,11 +762,53 @@ line-height: 1.71;
     .item-hero-po:nth-child(9){
         margin-bottom: 0;
     } 
-    .item-hero-po:hover{
+    .item-hero-po_link{
+        display: inline-block;
+        text-decoration: none;
+        transition: box-shadow 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .item-hero-po_link:hover,
+    .item-hero-po_link:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    } 
-  
+    }
+   /*-- .item-hero-po:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    } --*/
+    .item-hero-po_link:hover .hero-po-p{
+        transform: translateY(100%);
+    }
+  .hero-po-box{
+    position: relative;
+    overflow: hidden;
+  }
+.hero-po-img{
+    display: block;
+}
+.hero-po-p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 63px 24px;
+    text-align: left;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    opacity: 1;
+    transform: translateY(200%);
+    transition: transform 250ms var(--cubic);
+}
     .border-po {
         border: 1px solid #EEEEEE;
         padding-left: 24px;

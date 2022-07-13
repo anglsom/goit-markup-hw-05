@@ -768,6 +768,7 @@ line-height: 1.71;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    opacity: 1;
 }
     .item-hero-po:not(:last-child){
         margin-right: 30px;
@@ -790,6 +791,7 @@ line-height: 1.71;
     } 
     .item-hero-po:hover .overlay2{
         transform: translateY(0);
+        opacity: 1;
     }
 
     .border-po {

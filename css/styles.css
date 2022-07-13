@@ -768,7 +768,7 @@ line-height: 1.71;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    opacity: 0;
+    opacity: 1;
 }
     .item-hero-po:not(:last-child){
         margin-right: 30px;
@@ -797,9 +797,11 @@ line-height: 1.71;
     .border-po {
         border: 1px solid #EEEEEE;
         padding-left: 24px;
-        padding-bottom: 20px;
-        padding-top: 20px ;
+        padding-bottom: 22px;
+        padding-top: 22px ;
         padding-right: 24px;
+        overflow: hidden;
+        opacity: 0;
        /*-- border-top: none;
         position: relative;
         background-color: #fff;

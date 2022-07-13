@@ -740,8 +740,10 @@ line-height: 1.71;
          position: relative;
         overflow: hidden;;
         z-index: 1;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-        
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+    }
+    .item-hero-po:hover::before{
+        opacity: 1;
     }
     .item-hero-po img{ 
         display: block;
@@ -759,8 +761,13 @@ line-height: 1.71;
     height: 294px;
     padding: 63px 24px;
     background: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .overlay2:hover .overlay2{
+        transform: translateY(0);
+        opacity: 1;
     }
 .overlay2>p{
     font-weight: 400;
@@ -789,10 +796,10 @@ line-height: 1.71;
     .item-hero-po:hover{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     } 
-    .item-hero-po:hover .overlay2{
+    /*-- .item-hero-po:hover .overlay2{
         transform: translateY(0);
         opacity: 1;
-    }
+    } --*/
 
     .border-po {
         border: 1px solid #EEEEEE;
@@ -800,8 +807,8 @@ line-height: 1.71;
         padding-bottom: 22px;
         padding-top: 22px ;
         padding-right: 24px;
-        overflow: hidden;
-        opacity: 0;
+       /*-- overflow: hidden;
+        opacity: 0; --*/
        /*-- border-top: none;
         position: relative;
         background-color: #fff;

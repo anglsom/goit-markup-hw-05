@@ -476,11 +476,11 @@ margin-bottom: 50px;}
 }
 .item-do {
     width: calc((100% - 2 * 30px)/3);
-
+position: relative;
 }
-.do{
+/*-- .do{
     position: relative;
-}
+} --*/
 
 
 .item-do:not(:last-child){

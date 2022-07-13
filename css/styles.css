@@ -143,6 +143,10 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .link-nav:hover::after{
     opacity: 1;
 }
+
+.link-nav--current::after{
+    opacity: 1;
+}
 /*--.item-link-nav{
     margin-right: 50px;
 }--*/
@@ -182,6 +186,11 @@ padding: 30px 0;
 .link:hover::after{
     opacity: 1;
 }
+.link--current::after{
+    opacity: 1;
+}
+
+
  .contact-icon{
     margin-right: 10px;
  }   
